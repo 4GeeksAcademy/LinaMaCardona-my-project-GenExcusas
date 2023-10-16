@@ -1,9 +1,8 @@
 import "./style.css";
 
 window.onload = () => {
-  let randomNumber = Math.floor(Math.random() * 10);
-  document.querySelector("#excuse").innerHTML = randomNumber;
-  console.log("Hello Rigo from the console! " + randomNumber);
+  document.querySelector("#excuse").innerHTML = generateExcuse();
+  console.log("Hello Rigo from the console! ");
 };
 
 let generateExcuse = () => {
